@@ -5,15 +5,19 @@ function processData(input) {
     var arr = [];
 
     arr = input.split("\n");
-    var count = arr.shift();
+    var count = parseInt(arr.shift());
     var pairs = new Map();
-    for(let i = 0; i < count; i++) {
-        let pair = arr.shift().split(' ');
-        pairs.set(pair[0], pair[1]);
-    }
 
-    for(let i = 0; i < count; i++) {
-        let key = arr.shift();
+    var given_arr = arr.slice(0, count);
+    var test_arr = arr.slice(count, count * 2);
+
+    for(let item of given_arr){
+        let pair = item.split(' ');
+        pairs.set(pair[0], pair[1]);
+    }        
+        
+
+    for(let key of test_arr) {
         let pair = pairs.get(key);
         if(pair == undefined)
             console.log("Not found");
