@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch Node (console)",
             "program": "${workspaceRoot}/JavaScript/TenthDay/app.js",
             "cwd": "${workspaceRoot}"
         },
@@ -16,6 +16,18 @@
             "request": "attach",
             "name": "Attach to Process",
             "port": 5858
+        },
+        {
+            "name": "Launch .Net Core (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/CSharp/TenthDay/bin/Debug/netcoreapp1.1/TenthDay.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "externalConsole": false,
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
