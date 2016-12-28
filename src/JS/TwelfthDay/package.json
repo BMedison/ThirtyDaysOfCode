@@ -1,0 +1,9 @@
+{
+  "name": "twelfth-day",
+  "version": "0.0.0",
+  "description": "TwelfthDay",
+  "main": "app.js",
+  "author": {
+    "name": "sergei.karimov"
+  }
+}
