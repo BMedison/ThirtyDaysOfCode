@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JS", "JS", "{80C121AB-0315-
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "EleventhDay", "JS\EleventhDay\EleventhDay.njsproj", "{CCEE0878-B819-4302-AC55-C5EA8D83460C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EleventhDay", "CS\EleventhDay\EleventhDay.csproj", "{876D81A4-52E9-42E3-82F2-F3C3A289637F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thirtyDaysOfCode.Test", "CS\thirtyDaysOfCode.Test\thirtyDaysOfCode.Test.csproj", "{BB3F2D7E-C432-4DA6-B8D0-18DE25527CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +23,20 @@ Global
 		{CCEE0878-B819-4302-AC55-C5EA8D83460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCEE0878-B819-4302-AC55-C5EA8D83460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCEE0878-B819-4302-AC55-C5EA8D83460C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876D81A4-52E9-42E3-82F2-F3C3A289637F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876D81A4-52E9-42E3-82F2-F3C3A289637F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876D81A4-52E9-42E3-82F2-F3C3A289637F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876D81A4-52E9-42E3-82F2-F3C3A289637F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3F2D7E-C432-4DA6-B8D0-18DE25527CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3F2D7E-C432-4DA6-B8D0-18DE25527CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3F2D7E-C432-4DA6-B8D0-18DE25527CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3F2D7E-C432-4DA6-B8D0-18DE25527CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CCEE0878-B819-4302-AC55-C5EA8D83460C} = {80C121AB-0315-4C24-ADEF-9D9F100F4FAF}
+		{876D81A4-52E9-42E3-82F2-F3C3A289637F} = {1A078540-3719-4EBC-89C8-7C114EF88923}
 	EndGlobalSection
 EndGlobal
