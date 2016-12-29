@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0AFA7B61-2B39-41FD-8104-1682B6FC6FD1}</ProjectGuid>
+    <ProjectGuid>{B513BE1B-BC6A-44E1-B85E-CC7F9D274A3C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EleventhDay</RootNamespace>
-    <AssemblyName>EleventhDay</AssemblyName>
+    <RootNamespace>FourteenthDay</RootNamespace>
+    <AssemblyName>FourteenthDay</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

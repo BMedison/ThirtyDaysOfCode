@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EleventhDay\EleventhDay.csproj">
-      <Project>{876d81a4-52e9-42e3-82f2-f3c3a289637f}</Project>
+      <Project>{0afa7b61-2b39-41fd-8104-1682b6fc6fd1}</Project>
       <Name>EleventhDay</Name>
     </ProjectReference>
   </ItemGroup>

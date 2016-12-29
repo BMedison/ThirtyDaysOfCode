@@ -1,8 +1,9 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EleventhDay;
 using System.Linq;
 using System.Collections.Generic;
+
+using EleventhDay;
 
 namespace thirtyDaysOfCode.Test
 {
