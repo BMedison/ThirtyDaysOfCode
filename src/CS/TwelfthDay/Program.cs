@@ -10,6 +10,7 @@ namespace TwelfthDay
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("I did this with no needed to write code.");
         }
     }
 }
