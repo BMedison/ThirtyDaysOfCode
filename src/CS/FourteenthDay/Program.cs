@@ -3,15 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
 
 namespace FourteenthDay
 {
-    [TestFixture]
-    public class FourteenthDay
+    public class Difference
     {
-        [Test]
-        public void TestMethod1()
+        private int[] elements;
+        public int maximumDifference;
+
+        public Difference(int[] a)
+        {
+            this.elements = a;
+        }
+
+        public void ComputeDifference()
+        {
+            int res = 0;
+            int max = this.elements.Max();
+            int min = this.elements.Min();
+
+            res = Math.Abs(max - min);
+            this.maximumDifference = res;
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
         {
             Convert.ToInt32("3");
 
@@ -20,30 +38,6 @@ namespace FourteenthDay
             Difference d = new Difference(a);
 
             d.ComputeDifference();
-
-            Assert.AreEqual(d.maximumDifference, 4);
-        }
-    }
-
-    public class Difference
-    {
-        private int[] elements;
-        public int maximumDifference;
-
-        public Difference(int[] a)
-        {
-        }
-
-        public int ComputeDifference()
-        {
-            return maximumDifference;
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
         }
     }
 }
