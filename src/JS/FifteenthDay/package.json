@@ -1,0 +1,9 @@
+{
+  "name": "fifteenth-day",
+  "version": "0.0.0",
+  "description": "FifteenthDay",
+  "main": "app.js",
+  "author": {
+    "name": "sergei.karimov"
+  }
+}

@@ -55,6 +55,7 @@
     <Compile Include="TwelfthDay%28CS%29.cs" />
     <Compile Include="ThirteenthDay%28CS%29.cs" />
     <Compile Include="FourteenthDay.cs" />
+    <Compile Include="FifteenthDay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -63,6 +64,10 @@
     <ProjectReference Include="..\EleventhDay\EleventhDay.csproj">
       <Project>{0afa7b61-2b39-41fd-8104-1682b6fc6fd1}</Project>
       <Name>EleventhDay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FifteenthDay\FifteenthDay.csproj">
+      <Project>{6e98e930-dda7-4245-ad3b-bbd362d1107f}</Project>
+      <Name>FifteenthDay</Name>
     </ProjectReference>
     <ProjectReference Include="..\FourteenthDay\FourteenthDay.csproj">
       <Project>{70a66ba7-840d-4ec5-8cc1-536e4c88abbd}</Project>
