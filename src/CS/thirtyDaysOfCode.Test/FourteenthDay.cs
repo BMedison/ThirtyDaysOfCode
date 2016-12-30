@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using FourteenthDay;
 
 namespace thirtyDaysOfCode.Test
 {
@@ -16,9 +17,9 @@ namespace thirtyDaysOfCode.Test
 
             Difference d = new Difference(a);
 
-            d.computeDifference();
+            d.ComputeDifference();
 
-            Console.Write(d.maximumDifference);
+            Assert.AreEqual(4, d.maximumDifference);
         }
     }
 }
