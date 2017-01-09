@@ -56,6 +56,7 @@
     <Compile Include="ThirteenthDay%28CS%29.cs" />
     <Compile Include="FourteenthDay.cs" />
     <Compile Include="FifteenthDay.cs" />
+    <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
