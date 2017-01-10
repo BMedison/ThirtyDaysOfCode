@@ -6,25 +6,27 @@ namespace EighteenthDay
 {
     public class Solution
     {
+        private Stack<char> _stack = new Stack<char>();
+        private Queue<char> _queue = new Queue<char>();
         //Write your code here
-        public void pushCharacter(char c)
+        public void PushCharacter(char c)
         {
-            //
+            _stack.Push(c);
         }
 
-        public void enqueueCharacter(char c)
+        public void EnqueueCharacter(char c)
         {
-            //
+            _queue.Enqueue(c);
         }
 
-        public char popCharacter()
+        public char PopCharacter()
         {
-            return ' ';
+            return _stack.Pop();
         }
 
-        public char dequeueCharacter()
+        public char DequeueCharacter()
         {
-            return ' ';
+            return _queue.Dequeue();
         }
 
         static void Main(String[] args)
@@ -38,8 +40,8 @@ namespace EighteenthDay
             // push/enqueue all the characters of string s to stack.
             foreach (char c in s)
             {
-                obj.pushCharacter(c);
-                obj.enqueueCharacter(c);
+                obj.PushCharacter(c);
+                obj.EnqueueCharacter(c);
             }
 
             bool isPalindrome = true;
@@ -49,7 +51,7 @@ namespace EighteenthDay
             // compare both the characters.
             for (int i = 0; i < s.Length / 2; i++)
             {
-                if (obj.popCharacter() != obj.dequeueCharacter())
+                if (obj.PopCharacter() != obj.DequeueCharacter())
                 {
                     isPalindrome = false;
 
@@ -66,6 +68,7 @@ namespace EighteenthDay
             {
                 Console.Write("The word, {0}, is not a palindrome.", s);
             }
+            Console.ReadLine();
         }
     }
 }
