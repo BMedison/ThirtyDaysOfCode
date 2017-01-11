@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70A66BA7-840D-4EC5-8CC1-536E4C88ABBD}</ProjectGuid>
+    <ProjectGuid>{BFAA41FB-30F1-4FD9-8C8A-D52D8AB11093}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FourteenthDay</RootNamespace>
-    <AssemblyName>FourteenthDay</AssemblyName>
+    <RootNamespace>TwentiethDay</RootNamespace>
+    <AssemblyName>TwentiethDay</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BubbleSort\BubbleSort.cs" />
+    <Compile Include="BubbleSort\IBubbleSort.cs" />
+    <Compile Include="TwentiethDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SolutionTests.cs" />
+    <Compile Include="TwentiethDayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
