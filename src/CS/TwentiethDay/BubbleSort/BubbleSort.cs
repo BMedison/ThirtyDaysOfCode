@@ -9,7 +9,7 @@ namespace TwentiethDay.BubbleSort
     public class BubbleSortOne : IBubbleSort
     {
         private int _totalnumOfSwaps = 0;
-        private void swap(int a, int b)
+        private void swap(ref int a, ref int b)
         {
             int c = a;
             a = b;
@@ -31,7 +31,7 @@ namespace TwentiethDay.BubbleSort
                     // Swap adjacent elements if they are in decreasing order
                     if (a[j] > a[j + 1])
                     {
-                        swap(a[j], a[j + 1]);
+                        swap(ref a[j], ref a[j + 1]);
                         numberOfSwaps++;
                     }
                 }
@@ -48,9 +48,9 @@ namespace TwentiethDay.BubbleSort
             return a;
         }
 
-        public int GetTotalNumOfSwaps
+        public int GetTotalNumOfSwaps()
         {
-            get { return _totalnumOfSwaps; }
+            return _totalnumOfSwaps;
         }
     }
 }
