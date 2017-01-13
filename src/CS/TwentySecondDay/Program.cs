@@ -21,7 +21,7 @@ namespace ConsoleApplication
         //When
         
         //Then
-            Assert.Equal(2, 2 * 3);
+            Assert.Equal(2, 2 * 1);
         }
     }
 }
