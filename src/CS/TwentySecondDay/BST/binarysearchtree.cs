@@ -26,6 +26,10 @@ namespace BST
             return root;
         }
 
+        public Node GetRoot()
+        {
+            return _root;
+        }
         public Node Add(int data)
         {
             _root = this.Insert(_root, data);
