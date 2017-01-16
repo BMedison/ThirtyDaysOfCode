@@ -45,7 +45,7 @@ namespace ConsoleApplication
             node = bst.Add(4);            
             node = bst.Add(6);            
             node = bst.Add(7);            
-            Assert.Equal(3, bst.GetHeight(bst.GetRoot()));
+            Assert.Equal(3, bst.GetHeight(node));
         }
     }
 }

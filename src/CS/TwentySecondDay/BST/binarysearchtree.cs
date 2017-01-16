@@ -38,7 +38,14 @@ namespace BST
 
         public int GetHeight(Node root)
         {
-            return 0;
+          //Write your code here
+          if(root == null) {
+              return -1;
+          }
+          int leftDepth = GetHeight(root.left);
+          int rightDepth = GetHeight(root.right);
+              
+          return (leftDepth > rightDepth ? leftDepth : rightDepth) + 1;
         }
     }
 }
