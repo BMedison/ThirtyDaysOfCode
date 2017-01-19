@@ -47,5 +47,20 @@ namespace ConsoleApplication
             node = bst.Add(7);            
             Assert.Equal(3, bst.GetHeight(node));
         }
+
+        [Fact]
+        public void GetLevelOrder()
+        {
+            BinarySearchTree bst = new BinarySearchTree();
+            //3 5 4 7 2 1
+            Node node;
+            node = bst.Add(3);            
+            node = bst.Add(5);            
+            node = bst.Add(4);            
+            node = bst.Add(7);            
+            node = bst.Add(2);            
+            node = bst.Add(1);            
+            Assert.Equal("3 2 5 1 4 7 ", bst.LevelOrder(node));
+        }
     }
 }

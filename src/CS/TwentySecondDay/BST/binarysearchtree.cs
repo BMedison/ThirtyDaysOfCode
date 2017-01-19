@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace BST
 {
@@ -39,13 +40,33 @@ namespace BST
         public int GetHeight(Node root)
         {
           //Write your code here
-          if(root == null) {
+          if(root == null)
+          {
               return -1;
           }
+
           int leftDepth = GetHeight(root.left);
           int rightDepth = GetHeight(root.right);
               
           return (leftDepth > rightDepth ? leftDepth : rightDepth) + 1;
+        }
+
+        public string LevelOrder(Node node) 
+        {
+            Queue<Node> q = new Queue<Node>();
+            q.Enqueue(node);
+
+            string str = "";
+            while(q.Count != 0)
+            {
+                Node curr = q.Dequeue();
+                str += $"{curr.data} ";
+                
+                if(curr.left != null) q.Enqueue(curr.left);
+                if(curr.right != null) q.Enqueue(curr.right);
+            }
+
+            return str;
         }
     }
 }
